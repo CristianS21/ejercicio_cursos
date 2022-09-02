@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 
 def inicio (request):
-    return HttpResponse ("Vista inicio")
+    return render (request, "app_1/inicio.html")
 
 def cursos (request):
     return render (request, "app_1/cursos.html")
