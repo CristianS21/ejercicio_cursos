@@ -55,7 +55,7 @@ ROOT_URLCONF = 'django_.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["C:/Users/Thinkpad T440p/OneDrive/Escritorio/Cursos/django_/django_/Plantillas"],
+        'DIRS': ["C:/Users/Thinkpad T440p/OneDrive/Escritorio/Cursos/django_/app1_cursos/Templates/"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -63,6 +63,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                
             ],
         },
     },

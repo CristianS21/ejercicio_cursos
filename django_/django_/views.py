@@ -9,4 +9,9 @@ def probar_plantilla (request):
     plantilla_1=loader.get_template("plantilla_1.html")
     documento_html= plantilla_1.render (diccionario)
     return HttpResponse(documento_html)
+
+
+
+
+
     
