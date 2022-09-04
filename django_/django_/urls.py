@@ -5,8 +5,7 @@ from django.urls import path, include
 
 
 urlpatterns = [
-    #path('', admin.site.urls),
-    #path('', probar_plantilla),
+    path('admin/', admin.site.urls),
     path ("", include ("app1_cursos.urls")), 
 
 ]
