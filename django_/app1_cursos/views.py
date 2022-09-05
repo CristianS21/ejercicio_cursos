@@ -8,6 +8,9 @@ def inicio (request):
 def cursos (request):
     return render (request, "app_1/cursos.html")
 
+def cursos_formulario (request):
+    return render (request, "app_1/form_cursos.html")
+
 def profesores (request):
     return render (request, "app_1/profesores.html")
 
