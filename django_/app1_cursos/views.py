@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from app1_cursos.forms import curso_formulario 
+from app1_cursos.models import Curso
 
 
 def inicio (request):
@@ -10,14 +11,14 @@ def cursos (request):
     return render (request, "app_1/cursos.html")
 
 def cursos_formulario (request):
-    if request.method=="post":
-        formulario=curso_formulario(request.post)
+    if request.method =="POST":
+        formulario=curso_formulario(request.POST)
         
         if formulario.is_valid():
             data = formulario.cleaned_data
-            curso = curso (nombre=data["nombre"], comision=data["comision"])
-            curso.save()
-            return render (request, "app_1/inicio.html")
+            curso1 = Curso (nombre=data["nombre"], comision=data["comision"])
+            curso1.save()
+            return render (request, "app_1/inicio.html",{"exitoso":True})
       
     else:
         formulario=curso_formulario()
