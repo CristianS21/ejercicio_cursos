@@ -1,18 +1,16 @@
 {% extends "app_1/plantilla_base.html" %}
 
 {% block contenido_base %}
-<h3>Formulario de Cursossss:</h3>
 
+<h3>Formulario de Cursossss:</h3>
 
 <form action = "form_cursos/" method="POST">
 
     <p> Curso: <input type="text" name ="curso"> </p>
     <p> Comision: <input type="number" name ="comision"> </p>
 
-    <input type="text" value="Enviar">
+    <input type="Submit" value="Enviar">
 
-
-
-
+</form>
 
 {% endblock contenido_base %}
