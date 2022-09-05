@@ -2,14 +2,14 @@
 
 {% block contenido_base %}
 
-<h3>Formulario de Cursossss:</h3>
+<h3>Formulario de Cursos:</h3>
 
-<form action = "form_cursos/" method="POST">
+<form  method="post">
+    {% csrf_token%}
 
-    <p> Curso: <input type="text" name ="curso"> </p>
-    <p> Comision: <input type="number" name ="comision"> </p>
+    {{formulario.as_p}}
 
-    <input type="Submit" value="Enviar">
+    <input type="Submit" value="Enviar"/>
 
 </form>
 
