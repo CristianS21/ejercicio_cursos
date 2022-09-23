@@ -1,9 +1,7 @@
 from django.contrib import admin
-from .models import Curso, Profesor, Estudiantes, Entregable
-# Register your models here.
+from app1_cursos.models import Posteo
 
-admin.site.register (Curso)
-admin.site.register (Profesor)
-admin.site.register (Estudiantes)
-admin.site.register (Entregable)
+
+
+admin.site.register (Posteo)
 

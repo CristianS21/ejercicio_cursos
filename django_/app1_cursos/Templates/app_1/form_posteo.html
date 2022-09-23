@@ -1,0 +1,29 @@
+
+
+
+
+<html lang="en">
+<form enctype="multipart/form-data" method='POST'>
+    {% csrf_token %}
+
+    POSTEO NUEVO :
+    <br>
+    <br>
+    <p> Graffiti
+    <input type="file" name="imagen">
+    </p>
+    <p> fecha
+    <input type="date" name="fecha">
+    </p>
+    <p> autor
+    <input type="text" name="autor">
+    </p>
+       <p> descripcion
+    <input type="text" name="descripcion">
+    </p>
+    <input type="Submit" value="Enviar"/> 
+    </form>
+    
+   
+   
+

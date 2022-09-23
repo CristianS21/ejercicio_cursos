@@ -1,16 +1,10 @@
-
-from app1_cursos import views 
 from django.urls import path
-
+from app1_cursos import views 
 
 urlpatterns = [
 
-    path('', views.inicio, name="inicio"),
-    path('cursos/', views.cursos, name="cursos"),
-    path('profesores/', views.profesores, name="profesores"),
-    path('estudiantes/', views.estudiantes, name="estudiantes"),
-    path('entregables/', views.entregables, name="entregables"),
-    path('crear_cursos/', views.cursos_formulario, name="form_cursos"),
-    
+    path('inicio/', views.inicio, name="inicio"),
+    path('posteo/', views.posteo, name="posteo"),
+    path('principal/', views.principal, name="principal")  
 ]
 
