@@ -13,7 +13,7 @@ def posteo (request):
         if formulario.is_valid():
 
             data = formulario.cleaned_data
-            posteo1= Posteo (imagen= data ['imagen'],fecha =data['fecha'], autor=data['autor'], descripcion=data['descripcion'], )
+            posteo1= Posteo (imagen= data ['imagen'],ciudad=data ['ciudad'],pais = data ['pais'],fecha =data['fecha'], autor=data['autor'], descripcion=data['descripcion'], )
             posteo1.save()
 
         return render(request, "app_1/plantilla_principal.html")
